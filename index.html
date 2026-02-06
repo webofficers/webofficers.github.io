@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
+
 </head>
 <body>
     
@@ -28,7 +30,7 @@
         </nav>
         </div>
 
-        <div class="col-sm-3"><a class="btn" href="tel:9358574355">Contact Us</a></div>
+        <div class="col-sm-3 butn"><a class="btn" href="tel:9358574355">Contact Us</a></div>
     </div>
     </div>
       </header>
@@ -82,6 +84,125 @@
         </div>
       </section>
       <!-- ===end banner section=========== -->
+
+      <!-- ===testimonial=== -->
+      
+
+      <section id="testimonial-slider" class="splide">
+        
+        <h2 style="text-align: center; margin-bottom: 40px;">What People Are Saying!</h2>
+
+        <div class="splide__track">
+          <ul class="splide__list">
+      
+            <li class="splide__slide">
+                <div class="card">
+              <span class="quote">“</span>
+              <img src="img/girl.png">
+              <h4>Shreya Joshi</h4>
+              <div class="stars">★★★★★</div>
+              <p>Zero2Logics delivered an outstanding website for us. Every detail, from layout to functionality, was handled flawlessly. Our visitors love it!</p>
+              </div>
+            </li>
+      
+            <li class="splide__slide">
+                <div class="card">
+              <span class="quote">“</span>
+              <img src="img/boy.png">
+              <h4>Arjun Mehta</h4>
+              <div class="stars">★★★★☆</div>
+              <p>The team at Zero2Logics exceeded our expectations. Our WordPress website is modern, fast, and fully responsive. Truly professional work!</p>
+            </div>
+            </li>
+      
+            <li class="splide__slide">
+                <div class="card">
+              <span class="quote">“</span>
+              <img src="img/girl.png">
+              <h4>Priya Sharma</h4>
+              <div class="stars">★★★★★</div>
+              <p>Working with Zero2Logics was a pleasure. They understood our vision perfectly and created a website that aligns with our brand.</p>
+            </div>
+            </li>
+      
+            <li class="splide__slide">
+                <div class="card">
+              <span class="quote">“</span>
+              <img src="img/girl.png">
+              <h4>Aisha Khan</h4>
+              <div class="stars">★★★★☆</div>
+              <p>Zero2Logics transformed our ideas into a beautiful, functional HTML website. The process was smooth, and the final product impressed everyone on our team.</p>
+                    </div>
+            </li>
+      
+            <li class="splide__slide">
+                <div class="card">
+              <span class="quote">“</span>
+              <img src="img/boy.png">
+              <h4>Harsh Agarwal</h4>
+              <div class="stars">★★★★★</div>
+              <p>We wanted a website that stands out — and Zero2Logics delivered. The WordPress site is flawless, easy to manage, and visually stunning. Couldn’t be happier!</p>
+            </div>
+            </li>
+      
+          </ul>
+        </div>
+      </section>
+      <!-- ===end testimonial===== -->
+
+
+      <!-- ====contact form ====== -->
+
+      <section class="contact-section">
+        <div class="container">
+          <div class="row align-items-center">
+            
+            <!-- LEFT SIDE: CONTACT DETAILS -->
+            <div class="col-sm-6 contact-info">
+              <h2>Start Your Project</h2>
+              <p>We are available 24 hours a day, 7 days a week to assist you. Whether you have questions, need support, or want to discuss your project, feel free to reach out anytime — we’re always here to help.</p>
+      
+              <div class="info-box">
+                <h5><i class="fa-solid fa-location-dot"></i> &nbsp; Address</h5>
+                <p>near GeNext world school, Tonk Rd, Chokhi Dhani, Sanganer, Shri Ram Ki Nangal, Jaipur, Rajasthan 302022</p>
+              </div>
+      
+              <div class="info-box">
+                <h5><i class="fa-solid fa-envelope"></i>&nbsp; Email</h5>
+                <p><a href="mailto:sharma.adi52was@gmail.com">sharma.adi52was@gmail.com</a></p>
+              </div>
+      
+              <div class="info-box">
+                <h5><i class="fa-solid fa-phone-volume"></i> &nbsp; Phone</h5>
+                <p><a href="tel:+919358574355">+91 9358574355</a></p>
+              </div>
+            </div>
+      
+            <!-- RIGHT SIDE: FORM -->
+            <div class="col-sm-6 contact-form">
+              <h3>Send Us a Message</h3>
+              <form>
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Subject">
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" placeholder="Your Message" rows="5"></textarea>
+                </div>
+                <button class="formbtn" type="submit">Send Message</button>
+              </form>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+
+
 
       <section class="footer">
         <div class="container">
@@ -148,6 +269,7 @@
       slides[index].classList.add("active");
     }
     
+    // Next/Prev button functionality
     nextBtn.onclick = () => {
       current = (current + 1) % slides.length;
       showSlide(current);
@@ -157,8 +279,36 @@
       current = (current - 1 + slides.length) % slides.length;
       showSlide(current);
     };
-    </script>
     
+    // Auto-run slider every 3 seconds
+    setInterval(() => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }, 4000); // 3000ms = 3 seconds
+    </script>
+
+
+    <!-- =====testimonial -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          new Splide('#testimonial-slider', {
+            type: 'loop',
+            perPage: 3,
+            focus: 'center',
+            gap: '2rem',
+            autoplay: true,
+            interval: 300000000,
+            arrows: true,
+            pagination: false,
+            breakpoints: {
+              1024: { perPage: 2 },
+              768: { perPage: 1 }
+            }
+          }).mount();
+        });
+        </script>
 
 
 </body>
