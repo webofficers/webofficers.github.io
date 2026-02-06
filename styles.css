@@ -13,7 +13,7 @@
   section.footer {
     background: #06305d;
     color: #ffff;
-    padding: 50px 0px;
+    padding: 50px 0px 20px;
 }
 
   /* ===== HEADER ===== */
@@ -162,6 +162,13 @@ ul.social {
     gap: 15px;
 }
 
+.copiright {
+  text-align: center;
+}
+
+.copiright p{
+  margin:0px;
+}
 
 
 ul.social li {
@@ -174,6 +181,129 @@ ul.social li {
     border-radius: 58%;
 }
 
+
+
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.content p {
+  max-width: 600px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.content a {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #f19733;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.content a:hover {
+  background: #f19733;
+}
+
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  font-size: 28px;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.prev {
+  left: 15px;
+  font-size: 15px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.next {
+  right: 15px;
+  font-size: 15px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background: rgba(0,0,0,0.85);
+}
+
+.content {
+  padding-top: 100px;
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+    gap: 10px;
+}
+
   /* ===== RESPONSIVE ===== */
   @media (max-width: 768px) {
     .nav {
@@ -182,10 +312,4 @@ ul.social li {
     .menu-btn {
       display: block;
     }
-  }
-
-  /* Demo content spacing */
-  .content {
-    padding-top: 100px;
-    text-align: center;
   }

@@ -42,6 +42,47 @@
       </div>
     
 
+      <!-- ===========banner section===== -->
+      <section class="hero-section">
+        <div class="slider">
+      
+          <div class="slide active">
+            <img src="img/banner3.png">
+            <div class="overlay"></div>
+            <div class="content">
+              <h1>Creative design, as per your choice.</h1>
+              <p>Every design is customized to match your vision, style, and business goals.</p>
+              <a href="https://wa.me/9358574355">Start Your Project</a>
+            </div>
+          </div>
+      
+          <div class="slide">
+            <img src="img/banner3.png">
+            <div class="overlay"></div>
+            <div class="content">
+              <h1>The website of your dreams, with us!</h1>
+              <p>We turn your ideas into powerful digital experiences that truly represent your brand.</p>
+              <a href="https://wa.me/9358574355">Start Your Project</a>
+            </div>
+          </div>
+      
+          <div class="slide">
+            <img src="img/banner3.png">
+            <div class="overlay"></div>
+            <div class="content">
+              <h1>Every website is better than our experience.</h1>
+              <p>Our expertise ensures high quality, performance, and long-term value in every project.</p>
+              <a href="https://wa.me/9358574355">Start Your Project</a>
+            </div>
+          </div>
+      
+          <button class="prev">❮</button>
+          <button class="next">❯</button>
+      
+        </div>
+      </section>
+      <!-- ===end banner section=========== -->
+
       <section class="footer">
         <div class="container">
             <div class="row">
@@ -78,6 +119,10 @@
                 </div>
             </div>
         </div>
+        <hr>
+        <div class="copiright">
+            <p>© Copyright Zero2logics || All Rights Reserved</p>
+        </div>
       </section>
 
       <script>
@@ -89,6 +134,32 @@
           document.getElementById("mobileMenu").style.left = "-100%";
         }
       </script>
+
+
+<script>
+    const slides = document.querySelectorAll(".slide");
+    const nextBtn = document.querySelector(".next");
+    const prevBtn = document.querySelector(".prev");
+    
+    let current = 0;
+    
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove("active"));
+      slides[index].classList.add("active");
+    }
+    
+    nextBtn.onclick = () => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    };
+    
+    prevBtn.onclick = () => {
+      current = (current - 1 + slides.length) % slides.length;
+      showSlide(current);
+    };
+    </script>
+    
+
 
 </body>
 </html>
