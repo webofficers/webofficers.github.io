@@ -245,21 +245,31 @@
             <!-- RIGHT SIDE: FORM -->
             <div class="col-sm-6 contact-form">
               <h3>Send Us a Message</h3>
-              <form id="contactForm">
+              <form id="contactForm" action="https://zero2logics.github.io/zerologics/sharma.adi52was@gmail.com" method="POST">
+
+                <input type="hidden" name="_subject" value="New Contact Message - Zero2Logics">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+              
                 <div class="mb-3">
-                  <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" class="form-control" name="Name" placeholder="Your Name" required>
                 </div>
+              
                 <div class="mb-3">
-                  <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="Email" placeholder="Your Email" required>
                 </div>
+              
                 <div class="mb-3">
-                  <input type="text" class="form-control" id="subject" placeholder="Subject">
+                  <input type="text" class="form-control" name="Subject" placeholder="Subject">
                 </div>
+              
                 <div class="mb-3">
-                  <textarea class="form-control" id="message" placeholder="Your Message" rows="5"></textarea>
+                  <textarea class="form-control" name="Message" placeholder="Your Message" rows="5"></textarea>
                 </div>
+              
                 <button class="formbtn" type="submit">Send Message</button>
               </form>
+              
             </div>
       
           </div>
@@ -311,9 +321,9 @@
       </section>
 
       <script src="script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
-
-   
+    
 
 
 </body>
