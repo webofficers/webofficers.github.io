@@ -57,4 +57,10 @@ function openMenu() {
     alert("Thank you! Your message has been sent successfully.");
   });
 
+
+  $(".question").on("click keypress", function(e){
+    if(e.type==="click" || e.key==="Enter"){
+        $(this).parent().toggleClass("active");
+    }
+});
   

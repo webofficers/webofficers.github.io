@@ -547,15 +547,26 @@ section.hero-section h2 {
   font-size: 54px;
 }
 
+
+
 section.bannercls {
-  background-imgae: url(img/banner1.png);
+    background: url(img/banner1.png) !important;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    color: #fff;
 }
 
 
 
-element.style {
-}
-section.bannercls:before {
+ section.bannercls:before {
     content: "";
     position: absolute;
     top: 0;
@@ -567,25 +578,72 @@ section.bannercls:before {
     z-index: -1;
 }
 
-section.bannercls h1 {
+ section.bannercls h1 {
   font-size: 48px;
   letter-spacing: 1px;
 }
 
-section.bannercls {
-  background: url(img/banner2.png) !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-position: center;
-  height: 300px;
-  position: relative;
-  z-index: 1;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  text-align: center;
-  color: #fff;
+
+
+.faq{
+  max-width:800px;
+  margin:auto;
 }
+
+.faq_section .item{
+  background:rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  margin-bottom:15px;
+  border-radius:10px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,0.2);
+  box-shadow: rgb(241 151 51 / 17%) 0px 8px 24px;
+}
+
+.faq_section .question{
+  padding:18px 20px;
+  cursor:pointer;
+  color:#123b66;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-weight:600;
+}
+
+.faq_section .question::after{
+  content:"+";
+  font-size:22px;
+  transition:0.3s;
+}
+
+.faq_section .item.active .question::after{
+  transform:rotate(45deg);
+}
+
+.faq_section .answer{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height 0.4s ease;
+  padding:0 20px;
+  color:#123b66;
+}
+
+section.faq_section img {
+  width: 100%;
+  position: sticky;
+    top: 20px;
+}
+
+.faq_section .item.active .answer{
+  padding:0px 20px 20px;
+  max-height:300px;
+}
+
+
+section.faq_section {
+  padding: 50px 0px;
+}
+
   /* ===== RESPONSIVE ===== */
   @media (max-width: 768px) {
 
