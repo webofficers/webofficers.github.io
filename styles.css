@@ -529,14 +529,14 @@ section#service {
 
 
 section#service .col-sm-12 img {
-    width: 20%;
-    color: #f2a23c;
+    width: 100%;
     padding: 16px;
-    border-radius: 50%;
-    overflow: visible;
-    filter: brightness(0) saturate(100%) invert(69%) sepia(63%) saturate(676%) hue-rotate(345deg) brightness(101%) contrast(101%);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin-bottom: 20px;
+    filter: brightness(0.5) invert(1);
+}
+.card-icon {
+  background: #f19833;
+  width: 20%;
+  border-radius: 46px;
 }
 
 body h4 {
@@ -642,6 +642,62 @@ section.faq_section img {
 
 section.faq_section {
   padding: 50px 0px;
+}
+
+.industries-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.icon-cls {
+  background: #f19833;
+  width: fit-content;
+  margin: auto;
+  padding: 15px;
+  border-radius: 31px;
+}
+
+.icon-cls i {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.industry-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.industry-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.industry-card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.2rem;
+}
+
+.industry-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.industry-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
 }
 
   /* ===== RESPONSIVE ===== */

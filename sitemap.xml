@@ -13,11 +13,6 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://webofficers.github.io/index.html</loc>
-  
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://webofficers.github.io/services.html</loc>
   
   <priority>0.80</priority>
