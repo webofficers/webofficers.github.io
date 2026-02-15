@@ -7,7 +7,7 @@
     <meta name="title" content="Industries We Serve in Jaipur | Website Design & SEO – Web Officers">
     <meta name="description" content="Explore the industries we serve in Jaipur. Web Officers provides professional website design and SEO services for healthcare, education, real estate, retail, and small businesses.">
     <link rel="canonical" href="https://webofficers.github.io/industries.html">
-    <meta property="og:url" content="webofficers.github.io/">
+    <meta property="og:url" content="webofficers.github.io/industries.html">
     <meta property="og:title" content="Industries We Serve in Jaipur | Website Design & SEO – Web Officers">
     <meta property="og:description" content="Explore the industries we serve in Jaipur. Web Officers provides professional website design and SEO services for healthcare, education, real estate, retail, and small businesses.">
     <meta name="keywords" content="Healthcare Website Development in Jaipur, Real Estate Website Design Jaipur, Coaching Institute Website Development Jaipur, Small Business Website Design Jaipur">
@@ -35,7 +35,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Web Officers",
-    "url": "https://webofficers.github.io",
+    "url": "https://webofficers.github.io/industries.html",
     "logo": "https://webofficers.github.io/img/webofficers.png",
     "image": "https://webofficers.github.io/img/webofficers.png",
     "description": "Explore the industries we serve in Jaipur. Web Officers provides professional website design and SEO services for healthcare, education, real estate, retail, and small businesses.",
@@ -412,7 +412,14 @@
       <script src="script.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script>
+        $(".question").on("click keypress", function(e){
+  if(e.type==="click" || e.key==="Enter"){
+      $(this).parent().toggleClass("active");
+  }
+    });
+    </script>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVPTFLWX"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 

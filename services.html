@@ -31,7 +31,7 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Web Officers",
-  "url": "https://webofficers.github.io",
+  "url": "https://webofficers.github.io/service.html",
   "logo": "https://webofficers.github.io/img/webofficers.png",
   "image": "https://webofficers.github.io/img/webofficers.png",
   "description": "Web Officers is a Jaipur-based company offering website design, WordPress development, custom web design, and professional digital solutions for businesses.",
@@ -365,8 +365,15 @@
 
       <script src="script.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    
+      <script>
+        $(".question").on("click keypress", function(e){
+  if(e.type==="click" || e.key==="Enter"){
+      $(this).parent().toggleClass("active");
+  }
+    });
+    </script>
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVPTFLWX"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       

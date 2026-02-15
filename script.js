@@ -58,9 +58,7 @@ function openMenu() {
   });
 
 
-  $(".question").on("click keypress", function(e){
-    if(e.type==="click" || e.key==="Enter"){
-        $(this).parent().toggleClass("active");
-    }
-});
+
+
+
   

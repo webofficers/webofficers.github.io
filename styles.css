@@ -730,6 +730,89 @@ section.faq_section {
   box-shadow: 0 15px 25px rgba(0,0,0,0.2);
 }
 
+section.first {
+  padding: 70px 0px;
+}
+
+
+
+.first img {
+  box-shadow: rgb(241 151 51 / 48%) 0px 8px 24px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.first ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.first ul li {
+  list-style: none;
+  background: #153a650a;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #153a652e;
+}
+
+
+a.hero-btn {
+    background: #f09733;
+    padding: 12px 28px;
+    border-radius: 58px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+section.secloc
+{
+  background: url(img/banner2.png);
+}
+
+
+section.secloc:before {
+    content: "";
+    position: absolute;
+    background: #36587b;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+section.secloc a.hero-btn {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+section.secloc {
+    background: url(img/banner2.png);
+    padding: 80px 0px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+    color: #fff;
+}
+
+body p {
+  font-size: 18px;
+}
+
+body p a {
+  color: #143a64;
+  text-decoration: none;
+}
+
   /* ===== RESPONSIVE ===== */
   @media (max-width: 768px) {
 
@@ -937,7 +1020,14 @@ section.bannercls {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center;
-  height: 200px;
+  height: 300px;
+        padding: 30px 20px 15px 20px;
+}
+
+section.first .row {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 30px;
 }
 
   }
