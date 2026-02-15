@@ -417,7 +417,7 @@ section.about {
 }
 
 .bgcls {
-  background-image: url(img/about\ us.webp);
+  background-image: url(img/about-us.webp);
   /* position: absolute; */
   top: 0;
   right: 0;
@@ -522,11 +522,40 @@ section#service .col-sm-12 {
   padding: 32px;
 }
 
+section.serve {
+  padding: 50px 0px;
+}
 
 section#service {
   padding: 50px 0px;
 }
 
+section.serve {
+  text-align: center;
+}
+
+.breadcrumb
+{
+  margin-top: 20px;
+}
+
+.breadcrumb ul {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0;
+}
+
+.breadcrumb ul li {
+  list-style: none;
+}
+.breadcrumb ul li a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
 
 section#service .col-sm-12 img {
     width: 100%;
@@ -537,6 +566,7 @@ section#service .col-sm-12 img {
   background: #f19833;
   width: 20%;
   border-radius: 46px;
+  margin-bottom: 20px;
 }
 
 body h4 {
@@ -878,7 +908,13 @@ section#service .row {
 }
 
 section#service .col-sm-12 img {
-  width: 30%;
+  width: 100%;
+}
+
+.industries-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
 }
 
 section.bannercls h1 {
