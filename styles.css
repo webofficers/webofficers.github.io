@@ -812,10 +812,33 @@ body p a {
   color: #143a64;
   text-decoration: none;
 }
+section.footer h4 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+ul.location {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
 
   /* ===== RESPONSIVE ===== */
   @media (max-width: 768px) {
 
+    ul.location {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+  }
 
 
   .card-icon {
